@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { SCHEDULE } from '../constants';
-import { Session } from '../types';
 
-const ScheduleTimeline: React.FC = () => {
+const ScheduleTimeline = () => {
   return (
     <section id="schedule" className="py-24 px-4 bg-slate-950 scroll-mt-24">
       <div className="max-w-4xl mx-auto">
