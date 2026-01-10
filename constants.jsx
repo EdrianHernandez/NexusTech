@@ -1,9 +1,6 @@
-
-import { Speaker, Session, TicketTier, Sponsor } from './types';
-
 export const EVENT_DATE = new Date('2025-10-24T09:00:00');
 
-export const TICKETS: TicketTier[] = [
+export const TICKETS = [
   {
     id: 'early-bird',
     name: 'Early Bird',
@@ -31,14 +28,14 @@ export const TICKETS: TicketTier[] = [
   }
 ];
 
-const SPEAKERS: Record<string, Speaker> = {
+const SPEAKERS = {
   s1: { id: 's1', name: 'Sarah Drasner', role: 'VP Developer Experience', company: 'Netlify', avatar: 'https://picsum.photos/id/64/200/200' },
   s2: { id: 's2', name: 'Guillermo Rauch', role: 'CEO', company: 'Vercel', avatar: 'https://picsum.photos/id/65/200/200' },
   s3: { id: 's3', name: 'Rich Harris', role: 'Creator of Svelte', company: 'Vercel', avatar: 'https://picsum.photos/id/66/200/200' },
   s4: { id: 's4', name: 'Lee Robinson', role: 'VP of Product', company: 'Next.js', avatar: 'https://picsum.photos/id/67/200/200' },
 };
 
-export const SCHEDULE: Session[] = [
+export const SCHEDULE = [
   {
     id: '1',
     startTime: '09:00 AM',
@@ -77,7 +74,7 @@ export const SCHEDULE: Session[] = [
   }
 ];
 
-export const SPONSORS: Sponsor[] = [
+export const SPONSORS = [
   { id: '1', name: 'Google Cloud', tier: 'Platinum', logo: 'https://picsum.photos/id/101/200/100?grayscale' },
   { id: '2', name: 'AWS', tier: 'Platinum', logo: 'https://picsum.photos/id/102/200/100?grayscale' },
   { id: '3', name: 'Microsoft Azure', tier: 'Platinum', logo: 'https://picsum.photos/id/103/200/100?grayscale' },
