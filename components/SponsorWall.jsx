@@ -1,13 +1,12 @@
-
 import React from 'react';
 import { SPONSORS } from '../constants';
 
-const SponsorWall: React.FC = () => {
+const SponsorWall = () => {
   const platinum = SPONSORS.filter(s => s.tier === 'Platinum');
   const gold = SPONSORS.filter(s => s.tier === 'Gold');
   const silver = SPONSORS.filter(s => s.tier === 'Silver');
 
-  const LogoGrid: React.FC<{ list: typeof SPONSORS; title: string; sizeClass: string }> = ({ list, title, sizeClass }) => (
+  const LogoGrid = ({ list, title, sizeClass }) => (
     <div className="mb-16 last:mb-0">
       <div className="flex items-center justify-center mb-8">
         <div className="h-px bg-slate-800 flex-grow max-w-xs"></div>
