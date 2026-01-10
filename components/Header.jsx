@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
