@@ -1,7 +1,6 @@
-
 import React from 'react';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const footerNav = [
     { name: 'Home', href: '#' },
     { name: 'Schedule', href: '#schedule' },
