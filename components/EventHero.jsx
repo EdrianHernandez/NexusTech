@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { EVENT_DATE } from '../constants';
 
-const EventHero: React.FC = () => {
+const EventHero = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -31,7 +30,7 @@ const EventHero: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const TimeUnit: React.FC<{ value: number; label: string }> = ({ value, label }) => (
+  const TimeUnit = ({ value, label }) => (
     <div className="flex flex-col items-center px-2 md:px-6">
       <span className="text-4xl md:text-6xl font-black font-mono tracking-tighter text-brand-primary">
         {value.toString().padStart(2, '0')}
