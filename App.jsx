@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import EventHero from './components/EventHero';
@@ -43,9 +42,7 @@ function App() {
         </section>
 
         <ScheduleTimeline />
-        
         <TicketTiers />
-        
         <SponsorWall />
 
         {/* Call to Action Banner */}
