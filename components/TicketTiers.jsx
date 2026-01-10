@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { TICKETS } from '../constants';
 
-const TicketTiers: React.FC = () => {
+const TicketTiers = () => {
   return (
     <section id="tickets" className="py-24 px-4 bg-slate-900/30 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
